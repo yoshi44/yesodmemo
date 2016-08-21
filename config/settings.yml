@@ -19,13 +19,14 @@ ip-from-header: "_env:IP_FROM_HEADER:false"
 # reload-templates: false
 # mutable-static: false
 # skip-combining: false
+development: true
 
 # NB: If you need a numeric value (e.g. 123) to parse as a String, wrap it in single quotes (e.g. "_env:PGPASS:'123'")
 # See https://github.com/yesodweb/yesod/wiki/Configuration#parsing-numeric-values-as-strings
 
 database:
   user:     "_env:MYSQL_USER:sampleYesod"
-  password: "_env:MYSQL_PASSWORD:sampleYesod"
+  password: "_env:MYSQL_PASSWORD:" # From export
   host:     "_env:MYSQL_HOST:localhost"
   port:     "_env:MYSQL_PORT:5432"
   # See config/test-settings.yml for an override during tests
