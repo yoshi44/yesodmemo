@@ -19,19 +19,28 @@ ip-from-header: "_env:IP_FROM_HEADER:false"
 # reload-templates: false
 # mutable-static: false
 # skip-combining: false
-development: true
+#development: true
 
 # NB: If you need a numeric value (e.g. 123) to parse as a String, wrap it in single quotes (e.g. "_env:PGPASS:'123'")
 # See https://github.com/yesodweb/yesod/wiki/Configuration#parsing-numeric-values-as-strings
 
+#database:
+#  user:     "_env:MYSQL_USER:b4332cb5bf2204"
+#  password: "_env:MYSQL_PASSWORD:" # From export
+#  host:     "_env:MYSQL_HOST:us-cdbr-iron-east-04.cleardb.net"
+#  port:     "_env:MYSQL_PORT:5432"
+#  # See config/test-settings.yml for an override during tests
+#  database: "_env:MYSQL_DATABASE:ad_796752c3ed18a37"
+#  poolsize: "_env:MYSQL_POOLSIZE:1"
+
 database:
-  user:     "_env:MYSQL_USER:sampleYesod"
+  user:     "_env:MYSQL_USER:yesodmemo"
   password: "_env:MYSQL_PASSWORD:" # From export
   host:     "_env:MYSQL_HOST:localhost"
   port:     "_env:MYSQL_PORT:5432"
   # See config/test-settings.yml for an override during tests
-  database: "_env:MYSQL_DATABASE:sampleYesod"
-  poolsize: "_env:MYSQL_POOLSIZE:10"
+  database: "_env:MYSQL_DATABASE:yesodmemo"
+  poolsize: "_env:MYSQL_POOLSIZE:1"
 
 copyright: Insert copyright statement here
 #analytics: UA-YOURCODE

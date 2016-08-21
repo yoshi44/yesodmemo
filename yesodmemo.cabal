@@ -1,4 +1,4 @@
-name:              sampleYesod
+name:              yesodmemo
 version:           0.0.0
 cabal-version:     >= 1.8
 build-type:        Simple
@@ -86,13 +86,13 @@ library
                  , case-insensitive
                  , wai
 
-executable         sampleYesod
+executable         yesodmemo
     if flag(library-only)
         Buildable: False
 
     main-is:           main.hs
     hs-source-dirs:    app
-    build-depends:     base, sampleYesod
+    build-depends:     base, yesodmemo
 
     ghc-options:       -threaded -rtsopts -with-rtsopts=-N
 
@@ -124,7 +124,7 @@ test-suite test
                 TupleSections
 
     build-depends: base
-                 , sampleYesod
+                 , yesodmemo
                  , yesod-test >= 1.5.0.1 && < 1.6
                  , yesod-core
                  , yesod

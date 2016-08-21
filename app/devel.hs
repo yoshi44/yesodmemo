@@ -1,5 +1,5 @@
 {-# LANGUAGE PackageImports #-}
-import "sampleYesod" Application (develMain)
+import "yesodmemo" Application (develMain)
 import Prelude (IO)
 
 main :: IO ()
